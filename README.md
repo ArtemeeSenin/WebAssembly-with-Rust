@@ -8,8 +8,20 @@ Then specify target platform `rustup target add wasm32-unknown-unknown`
 
 On Linux Ubuntu `sudo apt install pkg-config`, `sudo apt-get install libssl-dev`
 
-Usign Rust package manager `cargo install wasm-pack` and `cargo install wasm-gc`, also install server for static files `cargo install https`
+Usign Rust package manager `cargo install wasm-pack` and `cargo install wasm-gc`, also install server for static files `cargo install https`.
+
+For compiling install cmake
+
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:george-edison55/cmake-3.x
+sudo apt-get update
+```
+
+`sudo apt-get install cmake`
 
 ## Creating a project
 
-`cargo new --lib utils`
+`cargo new --lib utils` and edit lib.rs
+
+Compile `cd utils` then `cargo build --target wasm32-unknown-unknown --release`

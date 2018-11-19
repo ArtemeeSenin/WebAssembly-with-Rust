@@ -5,7 +5,6 @@ authors = ["ArtemeeSenin <artemee.senin@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-onig = "1.2"
 
 [lib]
 crate-type = ["cdylib"]

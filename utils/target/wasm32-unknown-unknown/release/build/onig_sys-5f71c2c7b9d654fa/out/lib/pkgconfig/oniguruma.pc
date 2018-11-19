@@ -1,0 +1,13 @@
+prefix=/mnt/c/Users/Artemee/WebstormProjects/Using WebAssembly with Rust/utils/target/wasm32-unknown-unknown/release/build/onig_sys-5f71c2c7b9d654fa/out
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${prefix}/share
+
+Name: oniguruma
+Description: Regular expression library
+Version: 6.5.0
+Requires:
+Libs: -L${libdir} -lonig
+Cflags: -I${includedir}
