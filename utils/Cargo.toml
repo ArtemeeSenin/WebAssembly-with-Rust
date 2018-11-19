@@ -1,0 +1,11 @@
+[package]
+name = "utils"
+version = "0.1.0"
+authors = ["ArtemeeSenin <artemee.senin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+onig = "1.2"
+
+[lib]
+crate-type = ["cdylib"]
