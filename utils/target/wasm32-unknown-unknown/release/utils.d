@@ -1,1 +1,0 @@
-/mnt/c/Users/Artemee/WebstormProjects/Using\ WebAssembly\ with\ Rust/utils/target/wasm32-unknown-unknown/release/utils.wasm: /mnt/c/Users/Artemee/WebstormProjects/Using\ WebAssembly\ with\ Rust/utils/src/lib.rs
