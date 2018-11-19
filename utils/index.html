@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        WebAssembly.instantiateStreaming(fetch('utils.gc.wasm'))
-            .then(wasmModule => {
-                const result = wasmModule.instance.exports.add_one(2);
-                const text = document.createTextNode(result)
+         const appendNumberToBody = (number) => {
+                const text = document.createTextNode(number);
                 document.body.appendChild(text)
-            })
+            }
+
+            const importObject = {
+                env: {
+                    appendNumberToBody: appendNumberToBody
+                }
+            };
+
+            WebAssembly.instantiateStreaming(fetch("utils.gc.wasm"), importObject)
+                .then(wasmModule => {
+                    wasmModule.instance.exports.run();
+                })
     </script>
 </head>
 <body>
