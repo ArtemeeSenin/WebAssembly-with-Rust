@@ -22,6 +22,8 @@ sudo apt-get update
 
 ## Creating a project
 
-`cargo new --lib utils` and edit lib.rs
+`cargo new --lib utils` and edit lib.rs.
 
-Compile `cd utils` then `cargo build --target wasm32-unknown-unknown --release`
+`cargo install -f cargo-web`
+
+Compile `cd utils` then `cargo build --target wasm32-unknown-unknown --release`, `cargo web start --target wasm32-unknown-unknown` but also it os possible to do it like this way:
