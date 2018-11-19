@@ -1,4 +1,4 @@
-# Rust webassembly
+# Rust WebAssembly
 
 Install Rust with `sudo apt-get install build-essential` and `curl https://sh.rustup.rs -sSf | sh`
 
