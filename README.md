@@ -26,4 +26,12 @@ sudo apt-get update
 
 `cargo install -f cargo-web`
 
-Compile `cd utils` then `cargo build --target wasm32-unknown-unknown --release`, `cargo web start --target wasm32-unknown-unknown` but also it os possible to do it like this way:
+Compile `cd utils` then
+
+`cargo build --target wasm32-unknown-unknown --release`
+
+`wasm-gc target/wasm32-unknown-unknown/release/utils.wasm -o utils.gc.wasm`
+
+or
+
+`cargo web start --target wasm32-unknown-unknown` but also it os possible to do it like this way
